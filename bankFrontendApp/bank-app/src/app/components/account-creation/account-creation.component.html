@@ -1,0 +1,15 @@
+<h2 >Create Account</h2>
+<br>
+<form #accountForm="ngForm"
+(ngSubmit)="createAccount()">
+<label for="accountNumber">Account Number: </label>
+<input type="text" name="accountNumber" id="accountNumber" [(ngModel)]="account.accountNumber" required><br><br>
+
+<label for="accountHolder">Account Holder: </label>
+<input type="text" name="accountHolder" id="accountHolder" [(ngModel)]="account.accountHolder" required><br><br>
+
+<label for="balance">Initial Deposit: </label>
+<input type="number" name="balance" id="balance" [(ngModel)]="account.balance" required><br><br>
+
+<button type="submit" [disabled]="accountForm.form.invalid">Create Account</button>
+</form>

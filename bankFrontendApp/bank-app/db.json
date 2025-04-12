@@ -1,0 +1,46 @@
+{
+  "accounts": [
+    {
+      "accountNumber": "123456789",
+      "accountHolder": "Riyanka Kundu",
+      "balance": 22434.899999999998,
+      "id": "3ae4"
+    },
+    {
+      "accountNumber": "987654321",
+      "accountHolder": "Srinjoy Das",
+      "balance": 2110,
+      "id": "6849"
+    },
+    {
+      "accountNumber": "456123789",
+      "accountHolder": "Tamoghna Ghosh",
+      "balance": 11534.89,
+      "id": "b933"
+    },
+    {
+      "id": "2632",
+      "accountNumber": "987654321",
+      "accountHolder": "Priyanka",
+      "balance": 2000
+    },
+    {
+      "id": "88e7",
+      "accountNumber": "3715318641047",
+      "accountHolder": "Ankita Saha",
+      "balance": 40000
+    },
+    {
+      "id": "ef99",
+      "accountNumber": "6589758960",
+      "accountHolder": "LTIM",
+      "balance": 100000
+    },
+    {
+      "id": "0f3c",
+      "accountNumber": "65858769869",
+      "accountHolder": "Anonymous",
+      "balance": 100000
+    }
+  ]
+}
