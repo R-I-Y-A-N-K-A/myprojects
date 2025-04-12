@@ -1,0 +1,23 @@
+<div class="container">
+    <h2>Balance Inquiry</h2>
+   
+    <form (ngSubmit)="checkBalance()">
+      <label for="accountNumber">Account Number:</label>
+      <input
+        type="text"
+        id="accountNumber"
+        name="accountNumber"
+        [(ngModel)]="accountNumber"
+        required
+      />
+      <br /><br />
+      <button type="submit">Check Balance</button>
+    </form>
+   
+    <div *ngIf="balance !== null">
+      <p>Your account balance is: ₹{{ balance }}</p>
+    </div>
+    <button class="back" (click)="goBack()">Go Back</button>
+    <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
+  </div>
+   

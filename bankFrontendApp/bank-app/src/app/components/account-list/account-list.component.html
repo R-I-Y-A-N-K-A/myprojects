@@ -1,0 +1,47 @@
+<div>
+    <nav>
+
+        <div class="title">
+            <h1 class="bsys">Banking System</h1>
+            <h5>(Your one stop banking Solution)</h5>
+        </div>
+
+        <div class="buttons">
+            <button class="create_account" (click)="goToCreateAccount()">Account Creation</button>
+            <button class="balance_inquiry" (click)="goToBalanceInquiry()">Balance Inquiry</button>
+    </div>
+
+    </nav>
+</div>
+
+<div class="container">
+    <h1 class="aclist">Account List</h1>
+   
+   <!--<button (click)="goToCreateAccount()">Create New Account</button>-->
+   
+    <!-- Accounts Table -->
+    <table class="account-table">
+      <thead>
+        <tr >
+          <th class="heading">Account Number</th>
+          <th class="heading">Account Holder</th>
+          <!-- <th class="heading">Balance</th> -->
+          <th class="heading">Choose Option</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let account of accounts">
+          <td>{{ account.accountNumber }}</td>
+          <td>{{ account.accountHolder }}</td>
+          <!-- <td>{{ account.balance | currency}}</td> -->
+          <td>
+            <button class="deposit_button" (click)="goToDeposit(account.accountNumber)">Deposit Amount</button>
+            <button class="withdraw_button" (click)="goToWithdrawal(account.accountNumber)">Withdraw Amount</button>
+            <button class="delete_button" (click)="deleteAccount(account)">Delete</button>
+            <!-- <button class="balance_inquiry" (click)="goToBalanceInquiry(account.accountNumber)">Balance Inquiry</button> -->
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+   
